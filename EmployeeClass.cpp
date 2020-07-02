@@ -59,7 +59,6 @@ int main()
 {
 
     Employee employee1("Safak","Dal",5000);
-    Employee employee2("Caglar","Dal",4000);
 
     cout<<"İsim: "<<employee1.getİsim()<<"\nSoyad :"<<employee1.getSoyad()<<"\nMaas :"<<employee1.getMaas()<<"\nYıllık Maas : "<<employee1.getYıllımaas(150000)<<endl;
     cout<<"Zamlı Yıllık Maas : "<<employee1.getZamlıMaas(150000,0.1)<<endl;
