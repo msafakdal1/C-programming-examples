@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 int main()
 {
@@ -14,6 +15,8 @@ int main()
 
     while(y!=0){
         printf("Aklınızdan bir sayı tutunuz:");     scanf("%d",&number);
+        printf("\nBiraz bekleyiniz\n");
+        sleep(3);
 
         tahmin = 1+rand()%4;
 
@@ -36,7 +39,6 @@ int main()
 
     }
     printf("Doğru tahmin etme  sayınız :%d\nYanlıs tahmin etme sayınız :%d\n",dogruSayisi,yanlısSayısı);
-    
     printf("Oyun Bitti");
 
     return 0;
