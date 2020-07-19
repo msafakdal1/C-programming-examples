@@ -7,6 +7,8 @@ int main()
     int tahmin;
     int number;
     int y;
+    int dogruSayisi = 0;
+    int yanlısSayısı = 0;
 
     srand(time(NULL));
 
@@ -17,6 +19,7 @@ int main()
 
         if(tahmin == number){
             printf("Harika bildiniz:\n");
+            ++dogruSayisi;
         }
         else{
             printf("Maalesef bilemediniz\n");
@@ -26,11 +29,14 @@ int main()
             else{
                 printf("Sayı kucuk Tahmini azalt\n");
             }
+            ++yanlısSayısı;
         }
 
         printf("Oyundan Çıkmak ister misiniz(y or n)\n");         scanf("%d",&y);
 
     }
+    printf("Doğru tahmin etme  sayınız :%d\nYanlıs tahmin etme sayınız :%d\n",dogruSayisi,yanlısSayısı);
+    
     printf("Oyun Bitti");
 
     return 0;
